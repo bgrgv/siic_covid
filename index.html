@@ -1,0 +1,638 @@
+<!-- Created by Arpit Sharma -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+
+    <title>SIIC</title>
+    <style>
+        .Home {
+            height: 100%;
+            font-family: 'Montserrat';
+        }
+        
+        .card_content {
+            overflow: hidden;
+        }
+        
+        .jumbotron {
+            background: linear-gradient(45deg, #E7C74F, #f4d455, #f4c655);
+        }
+        
+        .card {
+            width: 35rem;
+            background: #fffdf7;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .animate__animated.animate__bounce {
+            --animate-duration: 2s;
+        }
+
+        .d-inline-block image align-top{
+            object-fit: contain;
+        }
+        
+        .image {
+            height: 100px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease'
+        })
+    </script>
+
+    <!-- MAIN SCREEN START HERE -->
+
+    <div class="Home">
+        <!-- NavBar -->
+        <nav class="navbar  ">
+            <a class="navbar-brand">
+                <img src="Assests\logo.webp" class="d-inline-block image align-top" alt="">
+            </a>
+            <a class="navbar-brand">
+                <img src="Assests\srm.jpeg" class="d-inline-block image  align-top" alt="">
+            </a>
+            <a class="navbar-brand">
+                <img src="Assests\sid.jpeg" class="d-inline-block image  align-top" alt="">
+            </a>
+
+        </nav>
+        <!-- JumboTron -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class=" d-flex justify-content-center">
+                <h1 class="display-5 text-center">Projects related to COVID-19</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="card_content">
+        <div class="row">
+            <div class="col-sm-4 d-flex justify-content-center">
+                <div class="card mt-2">
+                    <img src="Assests\venti.webp" class="card-img-top p-4 p-4" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">E - Ventilator</h5>
+                        <p class="card-text">
+                            <b>By Rizel Automotive </b><br>This is an automatic Ambu bag pressing machine which can be used as an alternate to full-fledged ventilators to provide forced breathing to the patient who is having respiratory problems.</p>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter2">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">E - Ventilator</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                This is an automatic Ambu bag pressing machine which can be used as an alternate to full-fledged ventilators to provide forced breathing to the patient who is having respiratory problems. The device operation is automated with the help of an electromechanical
+                                system. The goal is to ensure a minimum safe ventilator functionality based on clinical guidance with the lowest cost and easily manufacturable solution. The concept is to squeeze the ambu bag which is a standard medical
+                                equipment in a certain breathing pattern for the patient. This ventilator has easily customizable breathing frequency with the help of this knob from 10 beats to 30 beats per minute and breathing volume can be customized
+                                with the help of this knob from 300 ml to 450 ml. Inhale/Exhale ratio can also be customized. A buzzer is kept for intimation in case of system failures. This kill switch is used to stop the system in case of emergencies.
+                                The bag can be easily detached from the system in case system fails and operator has to manually pump the air.<br>By Rizel Automotive (Startup) : Currently Prototype developed, its in final
+                                stage of testing.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 d-flex justify-content-center">
+                <div class="card mt-2">
+                    <img src="Assests\Face.webp" class="card-img-top p-4 p-4" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Face Shields</h5>
+                        <p class="card-text">
+                            <b>By Kreator 3D Printing Solutions</b><br>To fight the covid-19 crisis all the systems including medical and law enforcement have been working in place with heavy public contact to bring the situation under control. content.</p>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter3">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">Face Shields</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                To fight the covid-19 crisis all the systems including medical and law enforcement have been working in place with heavy public contact to bring the situation under control. We have designed and fabricated a Face Shield to protect our frontline fighters.
+                                Face Shield can protect the frontline workers form almost all forms of exposure to covid-19 virus. It is stretchable, comfortable to wear for long hour. Without any discomfort or itching this can help with people at frontline
+                                be safe.<br></br>By Kreator (Startup) : Currently Supplied 250 Units to SRM Hospital, SIMS Hospital & Police Station Chennai Flower Bazar
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 d-flex justify-content-center">
+                <div class="card mt-2">
+                    <img src="Assests\world.png" class="card-img-top p-5" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">covidbot.online</h5>
+                        <p class="card-text">
+                            <b>By Blessin George Varghese and Arpit Sharma</b><br>The number of people affected by COVID-19 is only increasing thus making everyone become more aware of their own surroundings and taking enough precautions.<br>
+                            <b>Have a look</b> : <a href="https://covidbot.online">https://covidbot.online</a> </p>
+
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">covidbot.online</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                The number of people affected by COVID-19 is only increasing thus making everyone become more aware of their own surroundings and taking enough precautions. COVIDBOT WebApp has an interactive ChatBot that helps the user to do basic preliminary screening
+                                regarding COVID-19 within three minutes. The assessment includes questions such as age, recent travel history, smoking, history of diseases, etc. to provide a risk level. Also, suggestions are given to the user, in accordance
+                                with his/her risk level. It also includes very detailed data and interactive World Map that shows numbers related to current cases, total deaths, critical cases and more.
+                                <br><br> Have a look : <a href="https://covidbot.online">https://covidbot.online</a>
+                                <br><br> Made with ❤️ by Blessin George Varghese and Arpit Sharma
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-4 d-flex justify-content-center">
+                <div class="card mt-2">
+                    <img src="Assests\dor.webp" class="card-img-top p-4 p-4" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">DOT Medicals</h5>
+                        <p class="card-text">
+                            <b>By Students MUKUL KHADKE, ROHIT NAIR, DIVYAANSH SINGH, NEEL DESAI</b><br> Hospitals in India are facing a huge crisis of medical equipment’s and medicines due to very narrow supply of equipment from china therefore the resources
+                            left need to be efficiently distributed to the hospitals which are in dire need of the medication..
+                        </p>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter4">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">DOT Medicals</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <b>Problem:</b> Currently the hospitals in India are facing a huge crisis of medical equipment’s and medicines due to very narrow supply of equipment from china therefore the resources left need to be efficiently distributed
+                                to the hospitals which are in dire need of the medication. Looking at the current scenario there should be no wastage of medicine in such a crisi s therefor there is a need to track the consumption of the medical aid by
+                                the hospitals and which is done manually in 71% of the hospitals across the country and looking into current scenario there is a shortage of manpower to track the consumption off the medication and therefore there is a
+                                need of an automated inventory management system. ​
+                                <br>
+                                <b>Solution:</b> An automated Inventory management system for Hospital & Medical Agencies. To track available stock of medicines and medical equipment’s. This will be greatly helpful to do resource management and to create
+                                automated record of all the consumption. Mainly two parts of this system: Hardware: Tray with Load Cells where medicine and equipments could be placed, which will be monitored online. 2.Web Portal: Where all the hardware
+                                could be accessed over network and manage all the stocks. With this portal all the medical agency’s available stock could be viewed, and order could be placed.
+                                <br> By Students MUKUL KHADKE, ROHIT NAIR, DIVYAANSH SINGH, NEEL DESAI
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 d-flex justify-content-center">
+                <div class="card mt-2">
+                    <img src="Assests\kalam.webp" class="card-img-top p-4 p-4" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kalam Protector</h5>
+                        <p class="card-text">
+                            <b>By Torus Robotics (Start-up)</b> <br>The Unmanned Ground Vehicle (UGV) is a robotic system that can drive and navigate itself autonomously to sterilize streets from infection.
+                        </p>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter5">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">Kalam Protector</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                The Unmanned Ground Vehicle (UGV) is a robotic system that can drive and navigate itself autonomously to sterilize streets from infection.
+
+
+                                <br><br> Outdoor- This UGV can travel and disinfect up to a distance of 15km under a single charge. It has a 100 Litre storage of disinfectant liquid. It can also charge its battery and refill the disinfectant liquid automatically
+                                and repeat the designated operation round the days on its own.
+
+
+                                <br><br> Indoors- the robot can be fitter with Ultra Violette Disinfection system that this robot can navigate autonomously in the rooms and can disinfect it and return.
+
+
+                                <br><br> A solution that can work on the virus and kill them is a combination of phenol and formaldehyde in the mole ratio of 1: 1.05, through condensation polymerisation with base as catalyst. The product obtained after
+                                polymerization dissolved in water around 10% is proven to kill the virus.
+                                <br><br> By Torus Robotics (Startup)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 d-flex justify-content-center">
+                <div class="card mt-2">
+                    <img src="Assests\night.png" class="card-img-top p-4 p-4" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nightingale</h5>
+                        <p class="card-text">
+                            <b>By Torus Robotics (Start-up)</b><br> Problem:The isolated patients in the hospitals are regularly needed to be checked and be provided timely medicines and food, take samples and disinfect
+                        </p>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter6">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">Nightingale</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Problem:The isolated patients in the hospitals are regularly needed to be checked and be provided timely medicines and food, take samples and disinfect. This process involves the doctors, nurses and attenders to visit them on a regular basis everyday.
+                                There is another scenario when a patient dies, the attenders, nurses and doctors are extremely skeptical even to approach the body for the further process.
+                                <br><br> Solution:The need of the hour is to aid them on their process and prevent them from coming in close contact with the isolated patients. This can be achieved by the usage of robots that does the job of delivering
+                                food and medicine and help them with their sample testing and other activities.
+                                <br><br> Applications:
+                                <br><br> 1.Delivers food and medicine on automatic scheduled intervals. 2.Regularly checks the patient’s conditions visually and updates the doctors. 3.Disinfects the floor and surroundings on a scheduled interval. 4.Allow
+                                video calls that helps the doctors to communicate also pave way for the family members to still be in touch. 5.Safely take salivary samples from the patients and deliver it for testing. 6.Attend the body of the deceased
+                                patients
+                                <br><br> By Torus Robotics ( Startup)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 mb-5">
+            <div class="col-sm-4 d-flex justify-content-center">
+                <div class="card mt-2">
+                    <img src="Assests\cor.webp" class="card-img-top p-4 p-4" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Corona Tracker</h5>
+                        <p class="card-text"><b>FACULTY MENTOR:</b> Dr. R. Annie Uthra, Associate Professor, CSE Dept.
+                            <br> <b>STUDENT MEMBERS:</b> Prashant Gupta, Ashwin Srivastava, Anurag Sharma (III YEAR)</p>
+                        <br><br>
+                        <p class="card-text">In view of the worldwide pandemic, we at SRMpedia present the Corona Tracker, an app that will help you stay updated on Covid 19. It is all you need to be informed of the current situation we find ourselves in.</p>
+                        <br><br>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter7">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">
+                                    Corona Tracker</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                In view of the worldwide pandemic, we at SRMpedia present the Corona Tracker, an app that will help you stay updated on Covid 19. It is all you need to be informed of the current situation we find ourselves in.
+
+
+                                <br><br> Exclusive Features in This Application:
+                                <br> 1.The home page has information about the number of cases worldwide and an overview of the situation in different countries.
+                                <br> 2.A separate section for our Indian users to track the outbreak in the country.
+                                <br> 3.A news section covering covid 19 and general issues (The news put up is from genuine, verified sources only).
+                                <br> 4.A section enlisting the symptoms to watch out for and resources to keep yourself and your family safe.
+                                <br> 5.Direct links to reliable sources of information like The WHO website to avoid the spread of misinformation.
+                                <br> 6.A section containing all the helpline numbers (state-wise).
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 d-flex justify-content-center">
+                <div class="card mt-2">
+                    <img src="Assests\citi.webp" class="card-img-top p-4 p-4" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Serving Citizen</h5>
+                        <p class="card-text"><b>FACULTY MENTOR:</b> Ms. B. Sowmiya, Assistant Professor, CSE Dept.
+                            <br> <b>STUDENT MEMBERS:</b> Athish V P (I YEAR)
+                            <br>The app helps the sellers like small Kirana shops, street vendors, Social service activists can find customers, needy people and deliver their service to the customer at their Doorstep.
+                            <br> <b>Check it out here:</b> <a href="https://tinyurl.com/servingcitizen">
+                                tinyurl.com/servingcitizen</a>
+                            <br>
+                            <a href="https://www.linkedIn.com/showcase/servingcitizen/">
+                                https://www.linkedIn.com/showcase/servingcitizen/</a>
+
+                        </p>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter8">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">Serving Citizen</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                The app helps the sellers like small Kirana shops, street vendors, Social service activists can find customers, needy people and deliver their service to the customer at their Doorstep. It enables people to know about the products available in their area.
+                                Purchase and receives services without stepping out of the home which helps to break the chain during this COVID-19 pandemic.
+                                <br><br> Exclusive Features in This Application:
+                                <br>
+                                <li>Consumers can find nearby shops providing essential services and request for Products/Services from them.</li>
+
+                                <li>Social Service Providers/ Volunteers / NGO's can find people in need</li>
+
+                                <li>Option for a Service Provider to set one or more Delivery Man to deliver the products.
+                                </li>
+
+                                <li>Inbuilt Navigation Feature for the Delivery Man to navigate to the Customer's Location
+                                </li>
+
+                                <li>Customizable Request form.</li>
+
+                                <li>Multi-Language Support</li>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 d-flex justify-content-center">
+                <div class="card mt-2">
+                    <img src="Assests\coro.webp" class="card-img-top p-4 p-4" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Corona Doc</h5>
+                        <p class="card-text"> <b>FACULTY MENTOR:</b> Dr.C.Malathy, Professor, CSE Dept.
+                            <br> <b>STUDENT MEMBERS:</b> Smaranjit Ghose, Sukkrit Sharma, Suhrid Datta (III YEAR)
+                            <br>It takes in images of Chest Radiographs of patients and predicts COVID positive or negative in real time by the use of artificial intelligence under the hood.
+                            <br> <b>Check it out here:</b> <a href="https://lnkd.in/gkJ-Kc4<">https://lnkd.in/gkJ-Kc4</a>
+                            <br><a href="https://www.linkedin.com/posts/smaranjitghose_covid19-technology-artificialintelligence-activity-6658756141163655169-TGl-">https://www.linkedin.com/posts/smaranjitghose_covid19-technology-artificialintelligence-activity-6658756141163655169-TGl-</a>
+                        </p>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter8">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">Corona Doc</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 mb-5">
+            <div class="col-sm-4 d-flex justify-content-center">
+                <div class="card mt-2">
+                    <img src="Assests\main.webp" class="card-img-top p-4 p-4" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Lockdown Maintainer</h5>
+                        <p class="card-text">This AI system uses computer vision and machine learning to identify people roaming even after the lockdown is issued and sends an alert at the time to the mobile app which is accessible by authorised login credentials</p>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter11">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter11" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">
+                                    Lockdown Maintainer</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                This AI system uses computer vision and machine learning to identify people roaming even after the lockdown is issued and sends an alert at the time to the mobile app which is accessible by authorised login credentials.
+                                <br><br> Website Link: <a href="https://covid19-lockdown.netlify.app/">https://covid19-lockdown.netlify.app/</a> ​
+                                <br> GitHub: <a href="https://github.com/Akash-Ramjyothi/AI-Covid-19-Lockdown-Maintainer-System">https://github.com/Akash-Ramjyothi/AI-Covid-19-Lockdown-Maintainer-System</a>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 d-flex justify-content-center">
+                <div class="card mt-2">
+                    <img src="Assests\su.png" class="card-img-top p-4 p-4" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Suraksha Covid19</h5>
+                        <p class="card-text"><b>(By Shubhayan Saha, Soumya Sinha, Arya Sekhar Bandopadhyay and Archit
+                                Sharma, Ravi Teja)</b>
+                            <br>We all know Coronavirus has caused a global pandemic, at this unfortunate hour we as a team thought of doing something for the people of this country and people around the globe, a platform made exclusively for all the
+                            information related to this ongoing pandemic. </p>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter14">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter14" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">
+                                    Suraksha Covid19</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <b>Implementation of Idea</b> = We all know Coronavirus has caused a global pandemic, at this unfortunate hour we as a team thought of doing something for the people of this country and people around the globe, a platform
+                                made exclusively for all the information related to this ongoing pandemic.
+                                <br> <b>Aim behind</b> = To reach out to the crowd where people are getting persuaded by rumours and wrong information and provide them with information from valid sources like WHO, CSSI, etc.
+                                <br> <b>Functionality</b> = This Web App aims to be a well-developed platform for all the necessary sources like updated live confirmed, recovered and death cases of the coronavirus all around the globe, national and global
+                                news, hospital bed availability in rural and urban areas and Test yourself, a platform for the prediction of coronavirus.
+                                <br> <b>Contribution/Participation of people</b> = As of now it's private, we may think about this in our latest version.
+                                <br> <b>How it helps people</b> = It provides a wholesome view for all the necessary information such as daily updates on the cases worldwide and in our nation, a separate search bar dedicated to all the helpline numbers
+                                of the states health centre under Indian statistics tab, a daily update on the news about coronavirus globally and locally, the information about the hostel bed availability in India for rural and urban locations. and a
+                                prediction of detection of coronavirus for people facing symptoms.
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-4 d-flex justify-content-center">
+                <div class="card mt-2">
+                    <img src="Assests\coron.jpg" class="card-img-top p-4 p-4" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            CORONAPP</h5>
+                        <p class="card-text"><b>(By Anupam Tiwari & Neel Desai)</b><br>CORONAPP provides people with localized user experience. Using the phone's location, the Geo-map automatically zooms into the user's location on the map, allowing them to see the reports
+                            of cases around them.</p>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter12">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter12" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">
+                                    CORONAPP</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                CORONAPP provides people with localized user experience. Using the phone's location, the Geo-map automatically zooms into the user's location on the map, allowing them to see the reports of cases around them. This is the most important information people
+                                are looking for and they can find it within seconds. This application gives real-time location, pins it onto a geo map and gives information on hospitals, grocery stores and coronavirus cases. This is a crowdsourcing platform:
+                                users can input information about local grocery stores, as well as resources they have that they may be willing to give away. This application uses react-native and used various packages and also created available mobile
+                                platform.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3 mb-5">
+            <div class="col-sm-4 d-flex justify-content-center">
+                <div class="card mt-2">
+                    <img src="Assests\near.png" class="card-img-top p-4 p-4" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            NEAR YOU</h5>
+                        <p class="card-text"><b>(By Arko Chattergee & Hariom)</b><br>NEARYOU app is a one-stop marketplace tracker where citizens and vendors can seamlessly add and edit details about the marketplaces which are open near them.<br>
+                            <b>Weblink:</b> <a href="www.nearyou.tech">www.nearyou.tech</a></p>
+                        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter13">
+                            Details
+                        </button>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalCenter13" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalCenterTitle">
+                                    NEAR YOU</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                NEARYOU app is a one-stop marketplace tracker where citizens and vendors can seamlessly add and edit details about the marketplaces which are open near them. This platform has so far witnessed a whopping count of over 2,000-page visits with over 1,500
+                                shops uploaded since it’s launch and continues to increase exponentially every day. It is a crowdsourced based one-stop marketplace tracker wherein citizens and vendors can seamlessly add and edit details about the marketplaces
+                                which are open near them and also report any discrepancies. User can navigate to the marketplace and also share them via social media to their family, friends, and neighbours.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
+</div>
+</body>
+
+</html>
+</div>
+</body>
+
+</html>
